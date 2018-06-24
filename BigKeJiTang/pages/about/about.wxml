@@ -1,0 +1,5 @@
+<view class='about'>
+  <image class="main-bg" src="../../images/logo/logo-1.jpg"></image>
+  <text class = "title">小程序，大科技</text>
+  <text class = "botton">Copyright 学习交流使用 baishikun@sina.cn</text>
+</view>

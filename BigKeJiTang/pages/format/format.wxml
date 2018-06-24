@@ -1,0 +1,15 @@
+<!-- <text class='title'>进制转换</text> -->
+<view class="content">
+  <image class="main-bg" src="../../images/background/bg.png"></image>
+  <view class="screen-container">
+    <view class="screen">
+      <input type='number'>你输入的是：{{inputValue}}</input>
+    </view>
+  </view>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}">
+      <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+    </label>
+  </radio-group>
+
+</view>

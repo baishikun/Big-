@@ -1,0 +1,42 @@
+<image class="bg" mode="aspectFill" src="../../images/weather/bg3.jpg"></image>
+<view class="wrapper">
+  <view class="curWeather">
+    <view class="curTemperature">
+      <view class="city">{{city}}  {{district}}</view>
+      <view class="street">{{street}}</view>
+      <view class="tmp">{{now.tmp}}°</view>
+      <view class="type">{{now.cond.txt}} | 空气 {{quality.city.qlty}}</view>
+    </view>
+    <view class="curExtern">
+      <view class="wind">
+        <view class="">{{now.wind.dir}}</view>
+        <view wx:if="{{now.wind.sc=='微风'}}" class="val">{{"<="}}2级</view>
+        <view wx:else class="val">{{now.wind.sc}}级</view>
+      </view>
+      <view class="line"></view>
+      <view class="relWet">
+        <view class="">相对湿度</view>
+        <view class="val">{{now.hum}}%</view>
+      </view>
+      <view class="line"></view>
+      <view class="humanTmp">
+        <view class="">体感温度</view>
+        <view class="val">{{now.fl}}°</view>
+      </view>
+    </view>
+  </view>
+  <view class="forecast">
+    <block wx:for="{{forecast}}" wx:for-index="index" wx:for-item="fc">
+      <view class="castItem">
+        <view class="castDay">{{showday[index]}}</view>
+        <view class="castType">
+           <image class="typeImg" src="../../images/weather/{{fc.cond.code_d}}.png"></image> 
+          {{fc.cond.txt_d}} | {{quality.city.qlty}}
+        </view>
+        <view class="castTmp">
+          {{fc.tmp.max}}°C ~ {{fc.tmp.min}}°C
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

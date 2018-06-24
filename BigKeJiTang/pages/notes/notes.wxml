@@ -1,0 +1,27 @@
+
+<view class="container">
+  <view class="pure-g">
+    <view class="pure-u-20-24">
+      <input bindinput="bindInputTitle" value="{{inputTitle}}" placeholder="记点儿什么?" />
+    </view>
+    <view class="pure-u-4-24">
+      <button type="primary" size="mini" bindtap="addWant"> + </button>
+    </view>
+  </view>
+
+  <view class="pure-g main-items">
+    <scroll-view scroll-y="true">
+      <block wx:for="{{items}}" wx:for-item="item" wx:key="items">
+        <view class="item">
+          <text>{{index + 1}}. {{item.Title}}</text>
+          <icon class="delete" type="cancel" size="25" bindtap="deleteIt" id="{{index}}"/>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>
+
+
+
+
+

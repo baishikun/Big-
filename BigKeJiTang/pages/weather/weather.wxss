@@ -1,0 +1,62 @@
+/* pages/format/format.wxss */
+.wrapper{
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  position:absolute;/*绝对定位*/
+  top:0;
+  left:0;
+  padding:30rpx;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.curWeather{
+  height:460rpx;
+  display: flex;
+  flex-direction: column;/*纵向*/
+}
+
+.bg{
+  height:700rpx; 
+  width:750rpx;
+}
+
+.curTemperature{
+  color:#fff;
+  font-size: 0.8em;
+  flex-grow: 1;/*表示将剩余的空间分配给它*/
+}
+
+.tmp{
+  font-size: 5em;
+}
+.curExtern{
+  display: flex;
+  flex-direction: row;/*横向*/
+  justify-content: space-around;
+  color:#019CCA;
+}
+.val{
+  text-align: center;
+  font-size: 1.2em;
+}
+.line{
+   border:0.9rpx solid #ff0; 
+}
+.typeImg{
+  width:70rpx;
+  height:70rpx;
+  vertical-align: middle;
+}
+.castItem{
+  display: flex;
+  flex-direction: row; 
+   justify-content: space-between; 
+  /* border-bottom: 1rpx solid #0ff;  */
+  padding:50rpx 0;
+}
+.forecast{
+  color:#019CCA;
+  /*background: #aaa;*/
+  margin-top:40rpx;
+}

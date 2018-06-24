@@ -1,0 +1,30 @@
+.main-items {
+     margin-top: 10rpx; 
+    width: 100%;
+}
+
+.main-items .item{
+    display: block;
+    width: 95%;
+     margin-top: 30rpx; 
+    color: #666;
+    border-bottom: 1px dashed #888;
+    padding-bottom: 10rpx;
+}
+
+.main-items .delete{
+    float: right;
+    
+}
+.pure-g {
+  width: 100%;
+}
+
+input {
+  border-bottom: 1px solid #ccc;
+  font-size: 120%
+}
+
+button {
+  color: #ccc;
+}
