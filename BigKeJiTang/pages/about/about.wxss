@@ -14,6 +14,14 @@
   left:35%;
   z-index: -1;
 }
+.version {
+  /* height: 30%; */
+  /* width: 40%; */
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  z-index: -1;
+}
 .botton {
   /* height: 30%; */
   /* width: 40%; */
